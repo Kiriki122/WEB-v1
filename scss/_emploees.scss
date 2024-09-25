@@ -1,0 +1,51 @@
+/*--- Emploees ---*/
+
+.emploees {
+    &__galery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        column-gap: 20px;
+
+        @media only screen and (max-width: 992px) {
+            row-gap: 20px;
+        }
+    }
+
+    &__card {
+        display: grid;
+        grid-template-rows: subgrid;
+        grid-row: span 4;
+        justify-items: center;
+        row-gap: 20px;
+
+        max-width: 250px;
+    }
+
+    &__img {
+        max-width: 200px;
+
+        & > img {
+            width: 100%;
+            border-radius: 50%;
+            aspect-ratio: 1/1;
+        }
+    }
+
+    &__name {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    &__position {
+        font-size: 16px;
+        text-align: center;
+        text-wrap: balance;
+    }
+
+    &__information {
+        text-align: justify;
+    }
+}
+
+/*--- Emploees end ---*/

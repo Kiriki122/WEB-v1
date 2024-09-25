@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Связаться с нами | АК «Столичная»</title>
+    <meta name="description"
+        content="Автобусная компания «Столичная» предлагает широкий выбор комфортабельных автобусных поездок по городу и за его пределами. Мы гарантируем высокое качество обслуживания, безопасность и удобство при каждой поездке. Забронируйте билет уже сегодня!">
+    <link rel="icon" href="../assets/icon.png">
+    <link rel="stylesheet" href="../css/contacts.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <a href="../index.html" class="header__logo">
+                <img src="../assets/Header/logo.png" alt="MOSCOW BUS" class="header__img">
+            </a>
+            <h1 class="header__companyName">Автобусная компания «Столичная»</h1>
+            <form method="post" action="#!" class="header__form login">
+                <div class="login__block">
+                    <label class="login__label">Логин:</label>
+                    <input type="text" class="login__input" name="login" placeholder="Логин" autocomplete="name">
+                </div>
+                <div class="login__block">
+                    <label class="login__label">Пароль:</label>
+                    <input type="password" class="login__input" name="password" placeholder="Пароль"
+                        autocomplete="current-password">
+                </div>
+                <button class="login__button" type="submit">Войти</button>
+            </form>
+        </div>
+    </header>
+
+    <nav class="navigation">
+        <div class="navigation__container">
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a href="../index.html" class="navigation__link">Главная</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="../catalog/index.html" class="navigation__link">Каталог</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="index.html" class="navigation__link">Контакты</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main">
+        <div class="main__container">
+
+            <!-- <aside class="main__aside aside">
+                <nav class="aside__navigation">
+                    <ul class="aside__list">
+                        <li class="aside__item">
+                            <a href="#about" class="aside__link">О нас</a>
+                        </li>
+                        <li class="aside__item">
+                            <a href="#history" class="aside__link">История фирмы</a>
+                        </li>
+                        <li class="aside__item">
+                            <a href="#emploees" class="aside__link">Сотрудники</a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside> -->
+
+            <section class="main__content">
+
+                <article class="main__article article contacts">
+                    <div class="article__content contacts__content">
+                        <h2 class="article__title">Связаться с нами</h2>
+                        <form method="post" class="contacts__form">
+                            <div class="contacts__data">
+                                <input type="text" class="contacts__input-data" placeholder="Ваше имя" required
+                                    name="name" autocomplete="name">
+                                <input type="email" class="contacts__input-data" placeholder="Ваш email" required
+                                    name="email" autocomplete="email">
+                            </div>
+                            <div class="contacts__mail">
+                                <input type="text" class="contacts__input-mail" placeholder="Тема письма" required
+                                    name="email subject">
+                                <textarea name="message" id="contacts__message" cols="30" rows="10"
+                                    class="contacts__message" placeholder="Тескт письма" required></textarea>
+                            </div>
+                            <button class="contacts__button" type="submit">Отправить</button>
+                        </form>
+                        <div class="contacts__map" style="position:relative;overflow:hidden;">
+                            <a href="https://yandex.ru/maps/org/moscow_bus/159751677598/?utm_medium=mapframe&utm_source=maps"
+                                style="color:#eee;font-size:12px;position:absolute;top:0px;">Moscow Bus</a>
+                            <a href="https://yandex.ru/maps/21651/kotelniki/category/bus_transportation/184108119/?utm_medium=mapframe&utm_source=maps"
+                                style="color:#eee;font-size:12px;position:absolute;top:14px;">Автобусные перевозки в
+                                Котельниках</a>
+                            <a href="https://yandex.ru/maps/21651/kotelniki/category/ticket_office/89667922902/?utm_medium=mapframe&utm_source=maps"
+                                style="color:#eee;font-size:12px;position:absolute;top:28px;">Транспортная касса в
+                                Котельниках</a>
+                            <iframe class="contacts__frame"
+                                src="https://yandex.ru/map-widget/v1/?ll=37.859873%2C55.672332&mode=search&oid=159751677598&ol=biz&z=14.97"
+                                width="560" height="400" frameborder="1" allowfullscreen="true"
+                                style="position:relative;">
+                            </iframe>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            &copy; 2024 АК «СТОЛИЧНАЯ». Все права защищены.
+        </div>
+    </footer>
+
+</body>
+
+</html>

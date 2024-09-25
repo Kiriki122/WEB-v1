@@ -1,0 +1,282 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1.2;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+/*--- Base ---*/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+
+[class*=__container] {
+  max-width: 1080px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.main {
+  background-color: grey;
+  padding: 20px 0;
+  flex: 1 0 0;
+}
+/*--- Base end ---*/
+/*--- Header ---*/
+.header {
+  background-color: grey;
+  padding: 20px 0;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.header__img {
+  max-width: 200px;
+  min-width: 100px;
+  width: 100%;
+}
+.header__companyName {
+  font-size: 24px;
+  font-weight: 700;
+  text-wrap: nowrap;
+}
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  row-gap: 10px;
+}
+.login__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.login__input {
+  padding: 2px 5px;
+  width: 100%;
+}
+.login__button {
+  padding: 2px 5px;
+  border-radius: 2px;
+}
+
+/*--- Header end ---*/
+/*--- Navigation ---*/
+.navigation {
+  background-color: #ffffff;
+}
+.navigation__list {
+  display: flex;
+  justify-content: space-around;
+}
+@media only screen and (max-width: 992px) {
+  .navigation__list {
+    justify-content: space-between;
+  }
+}
+.navigation__item {
+  padding: 30px 0;
+}
+@media only screen and (max-width: 992px) {
+  .navigation__item {
+    padding: 20px 0;
+  }
+}
+.navigation__link {
+  padding: 30px 20px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: underline;
+}
+@media only screen and (max-width: 992px) {
+  .navigation__link {
+    padding: 20px 10px;
+  }
+}
+
+/*--- Navigation end ---*/
+/*--- Article ---*/
+.article:not(:last-child) {
+  padding-bottom: 20px;
+}
+.article__title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.article__information:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+/*--- Article  end ---*/
+.bus__title {
+  font-size: 36px;
+  font-weight: 400;
+}
+.bus__card {
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  align-items: flex-start;
+}
+.bus__img {
+  width: 100%;
+  max-width: 550px;
+}
+.bus__img > img {
+  width: 100%;
+}
+.bus__name {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+.bus__options {
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+.bus__option {
+  font-size: 18px;
+  list-style: disc;
+}
+.bus__option > span {
+  color: #990000;
+}
+.bus__info {
+  font-size: 18px;
+}
+.bus__info > span {
+  color: #990000;
+}
+.bus__plate {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.plates {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.plates__item {
+  font-size: 18px;
+  font-weight: 600;
+  border: 2px solid #d6d926;
+  border-radius: 5px;
+  box-sizing: content-box;
+  padding: 10px;
+}
+
+/*--- Footer ---*/
+.footer {
+  background-color: gray;
+  border-top: 2px #000 solid;
+  padding: 20px 0;
+}
+.footer__container {
+  text-align: center;
+}
+
+/*--- Footer end ---*//*# sourceMappingURL=bus.css.map */

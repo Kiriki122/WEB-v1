@@ -1,0 +1,23 @@
+/*--- Article ---*/
+
+.article {
+    &:not(:last-child) {
+        padding-bottom: 20px;
+    }
+
+    &__content {
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: 700;
+
+        margin-bottom: 20px;
+    }
+
+    &__information:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}
+
+/*--- Article  end ---*/
