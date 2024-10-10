@@ -193,6 +193,9 @@ body {
 
 /*--- Navigation end ---*/
 /*--- Article ---*/
+.article {
+  scroll-margin-top: 20px;
+}
 .article:not(:last-child) {
   padding-bottom: 20px;
 }
